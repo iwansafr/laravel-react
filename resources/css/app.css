@@ -1,0 +1,70 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    background: rgb(47, 158, 195);
+    color: aliceblue;
+}
+
+.container{
+    max-width: 780px;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlebar_item,h1,button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    border: 1px solid #6a727a;
+    padding: 9px 15px;
+    border-radius: 4px;
+    background: #FFF;
+    color: rgb(37, 36, 36);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #f1f1f1;
+    color: #6a727a;
+}
+
+.list_header{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50px 1fr 120px 120px 120px;
+    color: #6a727a;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1.2px;
+    padding-bottom: 20px;
+    background-color: #FFF;
+}
+
+.list_items{
+    padding: 10px 30px !important;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr 120px 120px;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    color: #6a727a;
+    background-color: #f1f1f1;
+    
+}
+

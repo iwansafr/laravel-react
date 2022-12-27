@@ -1,6 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 
 const New = () => {
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
+    const [photo, setPhoto] = useState(null);
+    const [type, setType] = useState('');
+    const [quantity, setQuantity] = useState('');
+    const [price, setPrice] = useState('');
+
+    const changeHandle = (e) => {
+        let file = e.target.file[0];
+        let reader = new FileReader();
+        let limit = 1024 * 1024 * 2;
+        if(file['size'])
+
+    }
+
     return (
         <div className="container">
             <div className="products_create">
@@ -18,21 +33,21 @@ const New = () => {
                     <div className="wrapper_left">
                         <div className="card">
                             <p>Name</p>
-                            <input type="text" />
+                            <input type="text" value={name} onChange={(event)=>{setName(event.target.value)}} />
                             <p>Description (Optional)</p>
-                            <textarea  cols="10" rows="5"></textarea>
+                            <textarea  cols="10" rows="5" value={description} onChange={(event)=>{setDescription(event.target.value)}}></textarea>
 
                             <div className="media">
                                 <ul className="image">
                                     <li className="image_item">
                                         <div className="image_item-img">
-                                            <img src="" width="117px" height="100px" />
+                                            <img src={photo} width="117px" height="100px" />
                                         </div>
                                     </li>
                                     <li className="image_item">
                                         <form className="imag_item-form">
                                             <label className="image_item-form--label">Add Image</label>
-                                            <input type="file" className="image_item-form--input" />
+                                            <input type="file" className="image_item-form--input"  />
                                         </form>
                                     </li>
                                 </ul>

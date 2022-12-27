@@ -6,8 +6,8 @@
     font-family: 'Fira Sans', sans-serif;
 }
 body{
-    background: rgb(47, 158, 195);
-    color: aliceblue;
+    background: rgb(40, 81, 203);
+    color: white;
 }
 
 .container{
@@ -51,7 +51,7 @@ body{
     border-bottom: 1px solid #e0e0e0;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 1.2px;
+    padding-top: 12px;
     padding-bottom: 20px;
     background-color: #FFF;
 }
@@ -60,11 +60,30 @@ body{
     padding: 10px 30px !important;
     gap: 10px;
     display: grid;
-    grid-template-columns: 50px 1fr 120px 120px;
+    grid-template-columns: 50px 1fr 120px 120px 120px;
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
     color: #6a727a;
     background-color: #f1f1f1;
-    
+}
+
+.btn-icon{
+    border: 1px solid #e0e0e0;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    color: #6a727a;
+    cursor: pointer;
+}
+
+.success:hover{
+    background: rgb(47,214,111);
+    color: white;
+}
+
+.danger:hover{
+    background: crimson;
+    color: white;
 }
 

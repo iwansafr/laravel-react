@@ -1,5 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 const IndexProduct = () =>{
+    const navigate = useNavigate();
+    const newProduct = () => {
+        navigate('/product/new');
+    }
     return(
         <div className="container">
             <div className="products_list">
@@ -8,7 +13,7 @@ const IndexProduct = () =>{
                         <h1>Products</h1>
                     </div>
                     <div className="titlebar_item">
-                        <div className="btn">
+                        <div className="btn" onClick={ () => newProduct() }>
                             Add Product
                         </div>
                     </div>
